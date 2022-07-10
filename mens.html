@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 80%;
+            margin: auto;
+            margin-top: 140px;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,auto); 
+            justify-content:space-evenly;
+        }
+        #container>div{
+            margin: auto;
+        }
+     
+
+        #container>div>div>img{
+            height: 350px;
+            width: 200px;
+            margin-left: 20px;
+        }
+
+        #container>div>h3{
+          font-size:x-large;
+          font-weight: bolder;
+          margin-bottom: -10px;
+        }
+
+        #container>div>h3+p{
+            color: grey;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #container>div>p+p{
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        p>span:first-child{
+
+            color: grey;
+            font-weight: lighter;
+        }
+        p>span:last-child{
+            color: #61c390;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div>
+        <div>
+        <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPPAUSE-BLACK-PAUS57747861200F37/1562877340930_1..jpg?imwidth=282&impolicy=hq" alt=""></div>
+        <h3>Pause</h3>
+        <p>Mens Cotton Sleeves Shrug</p>
+        <p>₹359  <span><del>₹1,499</del></span> <span>-76%</span> </p>
+    </div>
+    <div>
+      <div>  <img src="https://assetscdn1.paytm.com/images/catalog/product/A/AP/APPJUBINATION-SJERS295568BD3913AD/1562955990957_0..jpg?imwidth=320&impolicy=hq" alt=""></div>
+        <h3>Jubination</h3>
+        <p>Men Wool Sleeveless Sweater pack Of 1</p>
+        <p>₹799   <span><del>₹1,499</del>  </span> <span>-76%</span> </p>
+    </div>
+
+</div>
+</body>
+</html>
